@@ -1,3 +1,4 @@
+
 /* Опишите в этом файле все keyframes для проекта и стили анимаций иконки Like.
 
 Будьте внимательны! Для корректной работы скриптов на этом сайте нужно, чтобы в HTML некоторые классы были названы особым образом:
@@ -9,3 +10,94 @@
 ✦ button__text — для обозначения текстового элемента внутри кнопки
 
 */
+@keyframes scale-heart {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.25);
+    }
+}
+
+@keyframes sparkle {
+    from {
+        fill: rgba(255, 255, 255, 0); 
+    }
+    to {
+        fill: #FF0000;
+    }
+}
+
+.card__icon-button:focus {
+    outline: none;
+  }
+
+.card__icon-button:focus-visible {
+    border: 3px solid black;
+    transition: 0.3s ease;
+}
+
+.core {
+    fill: rgba(255, 255, 255, 0); 
+}
+
+.sparks {
+    fill: rgba(255, 0, 0, 0); 
+}
+
+.card__icon-button:hover .main-body {
+    fill: #000000; 
+    transition: fill 0.3s ease 0.05s;
+    
+}
+
+.card__icon-button:hover .core {
+    fill: #000000; 
+    transition: 0.3s ease;
+}
+
+.card__icon-button:not(:hover) .main-body {
+    transition: 0.3s ease 0.03s;
+    fill: rgba(255, 255, 255, 0); 
+}
+
+.card__icon-button:not(:hover) .core {
+    transition: 0.3s ease;
+    fill: rgba(255, 255, 255, 0); 
+}
+
+.card__icon-button:active .core {
+    transition: fill 0.3s ease 0.05s;
+    fill: #FF0000; 
+}
+
+.card__icon-button:active .main-body {
+    fill: #FF0000; 
+    transition: 0.3s ease;
+}
+
+.like-icon.is-liked .core  {
+    fill:#FF0000;
+    transition: 0.3s ease;
+}
+
+.like-icon.is-liked .main-body  {
+    fill:#FF0000;
+    transition: 0.3s ease 0.1s;
+}
+
+.like-icon.is-liked .contour  {
+    fill:#FF0000;
+    transition: 0.3s ease 0.2s;
+}
+
+.is-liked .heart {
+    animation: scale-heart 0.3s ease-in  0.1s;
+}
+
+.is-liked .sparks {
+    animation: sparkle 0.3s ease-in  0.3s;
+}
+
+
+

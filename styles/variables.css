@@ -1,1 +1,6 @@
-/* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+:root {
+    --title-font: 'PressStart2P-Regular';
+    --paragraph-font: 'Inter-Variable';
+    --border:  3px solid black;
+    --black: black;
+}
