@@ -21,8 +21,9 @@
 
 @keyframes sparkle {
     from {
-        fill: rgba(255, 255, 255, 0); 
+        fill: rgba(255, 255, 255, 0);
     }
+
     to {
         fill: #FF0000;
     }
@@ -37,56 +38,56 @@
     transition: 0.3s ease;
 }
 
-.core {
-    fill: rgba(255, 255, 255, 0); 
+.core {  
+    fill: rgba(255, 255, 255, 0);
 }
 
 .sparks {
-    fill: rgba(255, 0, 0, 0); 
+    fill: rgba(255, 0, 0, 0);
 }
 
 .card__icon-button:hover .main-body {
-    fill: #000000; 
+    fill: #000000;
     transition: fill 0.3s ease 0.05s;
     
 }
 
 .card__icon-button:hover .core {
-    fill: #000000; 
+    fill: #000000;
     transition: 0.3s ease;
 }
 
 .card__icon-button:not(:hover) .main-body {
     transition: 0.3s ease 0.03s;
-    fill: rgba(255, 255, 255, 0); 
+    fill: rgba(255, 255, 255, 0);
 }
 
 .card__icon-button:not(:hover) .core {
     transition: 0.3s ease;
-    fill: rgba(255, 255, 255, 0); 
+    fill: rgba(255, 255, 255, 0);
 }
 
 .card__icon-button:active .core {
+    fill: #FF0000;
     transition: fill 0.3s ease 0.05s;
-    fill: #FF0000; 
 }
 
 .card__icon-button:active .main-body {
-    fill: #FF0000; 
+    fill: #FF0000;
     transition: 0.3s ease;
 }
 
-.like-icon.is-liked .core  {
+.like-icon.is-liked .core {
     fill:#FF0000;
     transition: 0.3s ease;
 }
 
-.like-icon.is-liked .main-body  {
+.like-icon.is-liked .main-body {
     fill:#FF0000;
     transition: 0.3s ease 0.1s;
 }
 
-.like-icon.is-liked .contour  {
+.like-icon.is-liked .contour {
     fill:#FF0000;
     transition: 0.3s ease 0.2s;
 }

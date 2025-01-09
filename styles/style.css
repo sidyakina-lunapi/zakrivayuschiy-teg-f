@@ -32,7 +32,7 @@
   right: 0;
   bottom: 0;
   background: linear-gradient(to bottom, #E7E7E7, #1A1A1A);
-  z-index: -1; 
+  z-index: -1;
 }
 
 
@@ -97,13 +97,13 @@
   font-weight: 900;
   font-size: 112%;
   padding-bottom: 0.8%;
-  border-bottom: var(--border); 
+  border-bottom: var(--border);
 }
 
 .card-section-paragraph {
   font-family: 'Inter-Variable';
   padding-top: 2.75%;
-  padding-left: 3.5%; 
+  padding-left: 3.5%;
   padding-right: 3%;
   font-size: 110%;
   font-weight: 700;
@@ -132,7 +132,7 @@
   width: 12.8vh;
 }
 
-.button__text  {
+.button__text {
   position: relative;
   z-index: 1;
   font-family: var(--title-font), sans-serif;
@@ -162,18 +162,19 @@
   mix-blend-mode: hard-light;
   text-shadow: rgb(255, 255, 255) 2px 0px, rgb(255, 255, 255) 2px 2px, rgb(255, 255, 255) 0px 2px, rgb(255, 255, 255) -2px 2px, rgb(255, 255, 255) -2px 0px, rgb(255, 255, 255) -2px -2px, rgb(255, 255, 255) 0px -2px, rgb(255, 255, 255) 2px -2px;
 }
-@supports (-webkit-text-stroke: 1px #FFFFFF){
+
+@supports (-webkit-text-stroke: 1px #FFFFFF) {
   .label {
       -webkit-text-stroke: 1px #FFFFFF;
       text-shadow: none;
   }
 }
 
-.card:nth-child(2) img{
+.card:nth-child(2) img {
   filter: grayscale(0.8);
 }
 
-.card:nth-child(3) img{
+.card:nth-child(3) img {
   filter: saturate(600%);
 }
 
@@ -201,10 +202,11 @@
 
 
 .card:nth-child(8) img {
-  filter: hue-rotate(60deg);
+  filter: sepia(15%) hue-rotate(86deg) contrast(105%) invert(5%);
+  mix-blend-mode: hard-light;
 }
 
-.card:nth-child(8) .card-section-paragraph{
+.card:nth-child(8) .card-section-paragraph {
   padding-right: 4%;
 }
 
@@ -237,19 +239,18 @@
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0);
-  transform: translateX(-100%); 
-  transition: transform 0.5s ease-in-out; 
+  transform: translateX(-100%);
+  transition: transform 0.5s ease-in-out;
   border: 2px solid black;
 }
 
 .card__like-button:hover::after {
-  transform: translateX(0); 
-  
+  transform: translateX(0);
 }
 
 .card__like-button:hover .button__text {
-  color: white; 
-  mix-blend-mode: difference; 
+  color: white;
+  mix-blend-mode: difference;
 }
 
 dialog::backdrop {
@@ -313,25 +314,25 @@ dialog {
   width: 100%;
   height: 100%;
   background-color: var(--black);
-  transform: translateX(-100%); 
-  transition: transform 0.5s ease-in-out; 
+  transform: translateX(-100%);
+  transition: transform 0.5s ease-in-out;
   border: 2px solid black;
 }
 
 .card__like-button-footer:hover::after {
-  transform: translateX(0); 
+  transform: translateX(0);
   z-index: -1;
   
 }
 
 .card__like-button-footer:hover .button__text {
-  color: white; 
-  mix-blend-mode: difference; 
+  color: white;
+  mix-blend-mode: difference;
 }
 
 .card__like-button-footer:hover .button-discket {
-  fill: rgb(255, 255, 255); 
-  mix-blend-mode: difference; 
+  fill: rgb(255, 255, 255);
+  mix-blend-mode: difference;
 }
 
 .card__like-button-footer:last-child {
@@ -377,14 +378,13 @@ dialog {
       padding: 3vh 4vh 0.2vh 3.6vh;
       word-spacing: 0.09em;
   }
-  .card:first-child .card-section-paragraph{
+  .card:first-child .card-section-paragraph {
       padding: 3vh 5vh 0.2vh 3.6vh;
 
   }
 
-  .card:last-child .card-section-paragraph{
-      padding: 3vh 4vh 0.2vh 3.6vh;
-
+  .card:last-child .card-section-paragraph {
+    padding: 3vh 4vh 0.2vh 3.6vh;
   }
 
   .card__like-button {
