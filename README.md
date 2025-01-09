@@ -1,3 +1,3 @@
- https://sidyakina-lunapi.github.io/zakrivayuschiy-teg-f/index.html
+https://github.com/sidyakina-lunapi/zakrivayuschiy-teg-f.git
 
- https://github.com/username/zakrivayuschiy-teg-f
+https://sidyakina-lunapi.github.io/zakrivayuschiy-teg-f/index.html
