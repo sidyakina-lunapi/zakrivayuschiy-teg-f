@@ -94,7 +94,7 @@
   font-family: 'Inter-Variable';
   padding-top: 0.7%;
   padding-left: 1.5%;
-  font-weight: 900;
+  font-variation-settings: 'wght' 900;
   font-size: 112%;
   padding-bottom: 0.8%;
   border-bottom: var(--border);
@@ -106,7 +106,7 @@
   padding-left: 3.5%;
   padding-right: 3%;
   font-size: 110%;
-  font-weight: 700;
+  font-variation-settings: 'wght' 700;
   word-spacing: 0.035em;
 }
 
@@ -374,7 +374,7 @@ dialog {
   }
 
   .card-section-paragraph {
-      font-weight: 300;
+    font-variation-settings: 'wght' 300;
       padding: 3vh 4vh 0.2vh 3.6vh;
       word-spacing: 0.09em;
   }
