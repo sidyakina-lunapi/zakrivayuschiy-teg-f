@@ -15,16 +15,15 @@
   min-block-size: 100dvb;
 }
 
-.header-gradient {
+.page-gradient {
   position: relative;
-  width: 100vw;
+  width: 100%;
   background: linear-gradient(90deg, #D3D3D3 25%, transparent 25%, transparent 75%, #D3D3D3 75%, #D3D3D3),
       linear-gradient( #D3D3D3 25%, transparent 25%, transparent 75%, #D3D3D3 75%, #D3D3D3);
   background-size: 5px 5px;
-  padding-bottom: 34.5%;
 }
 
-.header-gradient::before {
+.page-gradient::before {
   content: '';
   position: absolute;
   top: 0;
@@ -32,14 +31,16 @@
   right: 0;
   bottom: 0;
   background: linear-gradient(to bottom, #E7E7E7, #1A1A1A);
-  z-index: -1;
+  z-index: -2;
 }
 
 
 .header {
   display: flex;
+  width: 100%;
   justify-content: center;
   padding-top: clamp(1rem, 0.982rem + 28.283vw, 6rem);
+  padding-bottom: 34.5%;
 }
 
 .header-box-title {
@@ -48,7 +49,7 @@
   justify-content: center;
   flex-direction: column;
   inline-size: 48.8vw;
-  height: 38vh;
+  height: 46vh;
   border: var(--border);
   text-align: center;
   background-color: white;
@@ -80,9 +81,7 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
-  font-family: 'Courier New', Courier, monospace;
   background-color: white;
-  box-shadow: 0px 5px 4px 0px rgba(0, 0, 0, 0.2);
 }
 
 .card:first-child {
@@ -91,10 +90,10 @@
 }
 
 .card-section-title {
-  font-family: 'Inter-Variable';
+  font-family: 'Inter-Variable', sans-serif;
   padding-top: 0.7%;
   padding-left: 1.5%;
-  font-variation-settings: 'wght' 900;
+  font-variation-settings: 'wght' 780;
   font-size: 112%;
   padding-bottom: 0.8%;
   border-bottom: var(--border);
@@ -102,15 +101,15 @@
 
 .card-section-paragraph {
   font-family: 'Inter-Variable';
-  padding-top: 2.75%;
+  padding-top: 2.77%;
   padding-left: 3.5%;
-  padding-right: 3%;
+  padding-right: 3.7%;
   font-size: 110%;
-  font-variation-settings: 'wght' 700;
-  word-spacing: 0.035em;
+  font-variation-settings: 'wght' 550;
+  word-spacing: 0.043em;
 }
 
-.card-section-paragraph-memory {
+.card-section-paragraph:nth-child(3n) {
   margin-top: 1%;
 }
 
@@ -129,7 +128,7 @@
   border: var(--border);
   position: relative;
   overflow: hidden;
-  width: 12.8vh;
+  width: 15.5vh;
 }
 
 .button__text {
@@ -137,7 +136,7 @@
   z-index: 1;
   font-family: var(--title-font), sans-serif;
   margin-right: -0.4vh;
-  font-size: 1.5vh;
+  font-size: 1.9vh;
   transition: color 0.5s ease-in-out;
 
 }
@@ -154,8 +153,8 @@
 
 .label {
   position: absolute;
-  font-size: 1.45vh;
-  bottom: 94.3%;
+  font-size: 1.69vh;
+  bottom: 95%;
   right: 4%;
   font-family: var(--title-font), sans-serif;
   color: var(--black);
@@ -206,11 +205,6 @@
   mix-blend-mode: hard-light;
 }
 
-.card:nth-child(8) .card-section-paragraph {
-  padding-right: 4%;
-}
-
-
 .card__like-button:focus {
   outline: none;
   box-shadow: none;
@@ -260,8 +254,8 @@ dialog::backdrop {
 dialog {
   width: 357px;
   height: 193px;
-  padding-top: 2.5%;
   overflow: hidden;
+  padding: 30px;
 }
 
 .footer {
@@ -284,6 +278,7 @@ dialog {
   position: relative;
   overflow: hidden;
   margin-bottom: 8%;
+  mix-blend-mode: difference;
 }
 
 .card__like-button-footer:focus {
@@ -327,12 +322,10 @@ dialog {
 
 .card__like-button-footer:hover .button__text {
   color: white;
-  mix-blend-mode: difference;
 }
 
 .card__like-button-footer:hover .button-discket {
   fill: rgb(255, 255, 255);
-  mix-blend-mode: difference;
 }
 
 .card__like-button-footer:last-child {
@@ -348,15 +341,17 @@ dialog {
  margin-bottom: 9%;
 }
 
-@media (width <= 380px) {
+@media (width <= 750px) {
   .card {
       width: 100%;
-      margin-bottom: 14.38%;
+      margin-bottom: 13.9%;
+      border: 1.5px solid black;
   }
 
   .header-box-title {
+      margin-top: 25%;
       inline-size: 100%;
-      height:49vh;
+      height: 34vh;
       margin-bottom: 20%;
   }
 
@@ -366,29 +361,29 @@ dialog {
 
   .header-title {
       font-size: 13.2vw;
-
+      margin-bottom: 4%;
   }
   
   .header-paragraph {
       font-size: 3.7vw;
   }
 
+  .card-section-title {
+    margin-right: 5%;
+  }
+
   .card-section-paragraph {
-    font-variation-settings: 'wght' 300;
-      padding: 3vh 4vh 0.2vh 3.6vh;
+      font-variation-settings: 'wght' 300;
+      padding: 2.2vh 4vh 0.5vh 2.5vh;
       word-spacing: 0.09em;
   }
-  .card:first-child .card-section-paragraph {
-      padding: 3vh 5vh 0.2vh 3.6vh;
 
-  }
-
-  .card:last-child .card-section-paragraph {
-    padding: 3vh 4vh 0.2vh 3.6vh;
-  }
+  .card-section-paragraph-memory {
+    padding-top: 2vh;
+}
 
   .card__like-button {
-      width: 21vh;
+      width: 14.5vh;
       margin-right: 5%;
   }
 
@@ -397,7 +392,7 @@ dialog {
   }
 
   .flex-card-button {
-      padding-top: 7%;
+      padding-top: 5.8%;
       margin-bottom: 6.5%;
   }
 
@@ -415,7 +410,7 @@ dialog {
   }
 
   .label {
-      font-size: 2vh;
-      bottom: 91%;
+      font-size: 1.4vh;
+      bottom: 90%;
   }
 }

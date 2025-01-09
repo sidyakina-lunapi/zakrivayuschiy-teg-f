@@ -6,13 +6,13 @@
     font-weight: 400 785;
     src:
       local('Inter-Variable'),
-      url('../fonts/Inter-Variable.woff2') format('woff2 supports variations'),
-          url('../fonts/Inter-Variable.woff2') format('woff2-variations');
+      url('Inter-Variable.woff2') format('woff2 supports variations'),
+          url('Inter-Variable.woff2') format('woff2-variations');
   }
 
   @font-face {
-    font-family: 'PressStart2P-Regular';
-    src: url('../fonts/PressStart2P-Regular.woff') format('woff2');
+    font-family: 'PressStart2P';
+    src: url('PressStart2P-Regular.woff') format('woff2');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
