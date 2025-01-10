@@ -117,7 +117,7 @@
   position: relative;
   z-index: 1;
   font-family: var(--title-font), sans-serif;
-  font-size: 1.37vh;
+  font-size: 14px;
   transition: color 0.5s ease-in-out;
 
 }
@@ -288,7 +288,6 @@ dialog[open] {
 
 .article .button__text {
   margin-top: 5.5%;
-  font-size: 14px;
   margin-right: 4%;
 }
 
