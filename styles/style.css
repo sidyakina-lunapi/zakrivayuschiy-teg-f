@@ -106,7 +106,7 @@
   margin-bottom: 3.7%;
 }
 
-.card__like-button {
+.button {
   border: var(--border);
   position: relative;
   overflow: hidden;
@@ -181,16 +181,16 @@
   mix-blend-mode: hard-light;
 }
 
-.card__like-button:focus {
+.button:focus {
   outline: none;
   box-shadow: none;
 }
 
-.card__like-button:focus-visible {
+.button:focus-visible {
   box-shadow: 2px 2px 0px 0px rgba(0, 0, 0, 1);
 }
 
-.card__like-button:before {
+.button:before {
   content:'';
   top: 0;
   left: 0;
@@ -201,7 +201,7 @@
   
 }
 
-.card__like-button::after {
+.button::after {
   content: '';
   position: absolute;
   top: 0;
@@ -214,11 +214,11 @@
   border: 2px solid black;
 }
 
-.card__like-button:hover::after {
+.button:hover::after {
   transform: translateX(0);
 }
 
-.card__like-button:hover .button__text {
+.button:hover .button__text {
   color: white;
   mix-blend-mode: difference;
 }
@@ -248,7 +248,7 @@ dialog[open] {
   margin-top: 0.35%;
 }
 
-.card__like-button-dialog {
+.button-dialog {
   width: 100%;
 }
 
@@ -267,50 +267,6 @@ dialog[open] {
   display: grid;
   grid-template-columns: 0fr 1fr 7fr;
 }
-
-.card__like-button-footer:focus {
-  outline: none;
-  box-shadow: none;
-}
-
-.card__like-button-footer:focus-visible {
-  box-shadow: 2px 2px 0px 0px rgba(0, 0, 0, 1);
-}
-
-.card__like-button-footer:before {
-  content:'';
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 50px;
-  background: rgba(0, 0, 0, 0.3);
-  transition: 0.5s ease-in-out;
-  
-}
-
-.card__like-button-footer::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: var(--brand-color);
-  transform: translateX(-100%);
-  transition: transform 0.5s ease-in-out;
-  border: 2px solid black;
-}
-
-.card__like-button-footer:hover::after {
-  transform: translateX(0);
-  z-index: -1;
-  
-}
-
-.card__like-button-footer:hover .button__text {
-  color: white;
-}
-
 
 .card__like-button-footer:last-child {
   width: 100%;
@@ -393,7 +349,7 @@ dialog .button-discket {
     padding-top: 2vh;
   }
   
-  .card__like-button {
+  .button {
       width: 140px;
       margin-right: 5%;
   }
@@ -438,7 +394,7 @@ dialog .button-discket {
       bottom: 90%;
   }
 
-  .card__like-button-dialog {
+  .button-dialog {
     width: 100%;
   }
 }
