@@ -252,7 +252,7 @@ dialog[open] {
   width: 100%;
 }
 
-.card__like-button-footer {
+.button-footer {
   position: relative;
   background-color: #FFFFFF;
   z-index: 4;
@@ -266,10 +266,6 @@ dialog[open] {
   mix-blend-mode: difference;
   display: grid;
   grid-template-columns: 0fr 1fr 7fr;
-}
-
-.card__like-button-footer:last-child {
-  width: 100%;
 }
 
 .article-paragraph {
@@ -286,7 +282,7 @@ dialog[open] {
   margin-left: 16px;
 }
 
-.card__like-button-footer:hover .button-discket {
+.button-footer:hover .button-discket {
   fill: rgb(255, 255, 255);
 }
 
@@ -308,18 +304,17 @@ dialog .button-discket {
   .card {
       width: 100%;
       margin-bottom: 13.9%;
-      border: 1.5px solid black;
   }
 
   .header-box-title {
-      margin-top: 25%;
+      margin-top: 19%;
       inline-size: 100%;
       height: 327px;
       margin-bottom: 20%;
   }
 
   .header {
-      padding-top: 0;
+      padding-bottom: 32px;
   }
 
   .header-title {
@@ -332,15 +327,13 @@ dialog .button-discket {
   }
 
   .card-section-title {
-    margin-right: 5%;
     margin-left: 4px;
   }
 
   .card-section-paragraph {
-      font-variation-settings: 'wght' 300;
-      padding-top: 24.5px;
-      padding-left: 22px;
-      padding-right: 28px;
+      padding-top: 21px;
+      padding-left: 22.5px;
+      padding-right: 22px;
       padding-bottom: 3.5px;
       word-spacing: 0.09em;
   }
@@ -360,20 +353,18 @@ dialog .button-discket {
 
   .flex-card-button {
       padding-top: 5.8%;
-      margin-bottom: 6.5%;
+      margin-bottom: 8%;
   }
 
-  .card__like-button-footer {
+  .button-footer {
       display: block;
+      margin-right: 0;
       width: 306px;
       height: 84px;
   }
 
-  .footer svg:first-child {
-      width: 100%;
-      display: flex;
-      margin-left: 45%;
-      height: 5vh;
+  .card:last-child {
+    margin-bottom: 12%;
   }
 
   .button-discket {
@@ -386,7 +377,7 @@ dialog .button-discket {
   .article .button__text {
     text-align: center;
     margin-left: 5%;
-    font-size: 9%;
+    font-size: 90%;
   }
 
   .label {
