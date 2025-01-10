@@ -328,12 +328,13 @@ dialog .button-discket {
 
   .card-section-title {
     margin-left: 4px;
+    padding-right: 5%;
   }
 
   .card-section-paragraph {
       padding-top: 21px;
       padding-left: 22.5px;
-      padding-right: 22px;
+      padding-right: 25.5px;
       padding-bottom: 3.5px;
       word-spacing: 0.09em;
   }
@@ -381,7 +382,7 @@ dialog .button-discket {
   }
 
   .label {
-      font-size: 1.4vh;
+      font-size: 13px;
       bottom: 90%;
   }
 
