@@ -260,7 +260,6 @@ dialog[open] {
   height: 55px;
   width: 335px;
   border: var(--border);
-  position: relative;
   overflow: hidden;
   margin-bottom: 5%;
   mix-blend-mode: difference;
@@ -362,6 +361,8 @@ dialog .button-discket {
       margin-right: 0;
       width: 306px;
       height: 84px;
+      padding-top: 4px;
+    margin-bottom: 100px;
   }
 
   .card:last-child {
@@ -373,11 +374,6 @@ dialog .button-discket {
     height: 30px;
     padding-bottom: 3px;
     margin-left: 140px;
-  }
-
-  .button-footer {
-    padding-top: 4px;
-    margin-bottom: 100px;
   }
 
   .button-footer .button__text {
