@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="./styles/variables.css" />
     <link rel="stylesheet" href="./styles/style.css" />
     <link rel="stylesheet" href="./styles/animations.css" />
-    <meta name="color-scheme" content="dark light" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Закрывающий тег</title>
@@ -508,8 +507,6 @@
           </button>
         </div>
       </section>
-    </main>
-    <article class="article">
       <button
         type="button"
         onclick="window['dialog-id'].showModal()"
@@ -528,11 +525,11 @@
           </svg>
           <h2 class="article-paragraph">Вставьте дискету, чтобы продолжить</h2>
         </div>
-        <button class="button button-dialog" type="button">
-          <span class="button__text" onclick="window['dialog-id'].close()">OK</span>
+        <button onclick="window['dialog-id'].close()" class="button button-dialog" type="button">
+          <span class="button__text">OK</span>
         </button>
       </dialog>
-    </footer>
+    </main>
     <script src="./scripts/like.js"></script>
   </body>
 </html>
